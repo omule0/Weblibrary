@@ -5,4 +5,4 @@ from . import views
 #add books to cart
 #
 
-urlpatterns = [path('')]
+urlpatterns = [path('', views.StudentLib)]

@@ -6,8 +6,9 @@ from django.shortcuts import render
     #view to redirect to librarian account -> accounts app
 
 def home(request):
+    return render(request , 'home.html')
     #return home page or index page
-    pass
+    #pass
 
 def student_account(request):
     #redirect student to login or account creation
