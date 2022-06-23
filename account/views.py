@@ -17,3 +17,36 @@ def login(request):
 def logout(request):
     #logout from any account currently logged in
     pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
