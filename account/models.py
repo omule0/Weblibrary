@@ -10,4 +10,4 @@ class StudentReg(models.Model):
     firstname =models.CharField(max_length=255)
     lastname = models.CharField(max_length=255)
     mail = models.EmailField(default="library@email.tld")
-    password = models.CharField()
+    password = models.CharField(max_length=255)
