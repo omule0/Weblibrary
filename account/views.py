@@ -1,3 +1,4 @@
+import re
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -7,8 +8,7 @@ from django.http import HttpResponse
     #view to logout users
 
 def createNewAccount(request):
-    #create student account | librarian account
-    pass
+    singup = render(request , '/')
 
 def login(request):
     #login to student account | librarian account
