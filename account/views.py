@@ -1,51 +1,16 @@
-import re
+from account import models
 from django.shortcuts import render
 from django.http import HttpResponse
 
-#views for the home app
-    #view to Create a New Account
-    #view to login users
-    #view to logout users
-
-def createNewAccount(request):
-    singup = render(request , '/')
-
-def login(request):
-    #login to student account | librarian account
-    pass
-
-def logout(request):
-    #logout from any account currently logged in
-    pass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def StudentReg(request):
+    if request.method == "POST":
+        first_name = request.POST['first_name']
+        last_name = request.POST['last_name']
+        email = request.POST['email']
+        password = request.POST['password']
+        save_student_details = StudentReg(firstname=first_name , lastname=last_name , mail=email , password=password)
+        save_student_details.save()
+    return render(request , 'student_reg.html' )
 
 
 
