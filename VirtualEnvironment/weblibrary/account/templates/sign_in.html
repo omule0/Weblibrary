@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" content="with=device-width, initial-scale=1.0"><!--helps to make the website responsive-->
         <title> Account Sign in - The archive account.The Archive.org </title>
     </head>
-    <body>
-        <div>The archive</div>    
+    <body> 
+        <div class="header">The archive</div>    
         <form action="#" method="POST">
             <div class="container">
                 <section class="username">
                     <label for="user">Enter username</label>
-                    <input type="text" name="user" id="user">
+                    <input type="text" name="user" id="user" placeholder="username">
                 </section>
                 <br>
                 <section class="password">
                     <label for="user_password">Enter Password</label>
-                    <input type="password" name="user_password" id="user_password">
+                    <input type="password" name="user_password" id="user_password" placeholder="password">
                 </section>
                 <section>
                     <input type="checkbox" name="remember_me" id="remember">
                     <label for="remeber_me">remember me</label>
                 </section>
                 <div class="log_button">
-                    <a href="#">Login</a>
+                    <button class="log"><a href="Dashboard.html">Login</a></button>
                 </div>
                 <hr>
                 <h3 id="or">or</h3>
@@ -32,11 +32,14 @@
                 <div class="apple_log">
                     <a href="#">Contuine with Apple</a>
                 </div>
+                <!--<div class="socail_Media">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </div>-->
                 <br>
                 <hr>
                 <div  class="signup_button">
                 <h3 id="signup">Don't have The Archive account signup</h3>
-                    <a href="account_sign up.html">Sign Up</a>
+                    <button><a href="account_sign up.html">Sign Up</a></button>
             </div>    
         </form>
     </body>
