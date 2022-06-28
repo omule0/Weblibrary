@@ -29,7 +29,8 @@
             <div style="border-radius: 17px;" class="card-body bg-warning p-3">
 
 <!--REQUIRED FIELDS-->
-<form class="form-control">
+<form class="form-control" method="post">
+    {% csrf_token %}
     <div class="form-group">
         <label for="fname" class="form-label">FIRST NAME</label> <br>
         <input type="text"  class="form-control form-control-lg" name="fname" id="fname" required placeholder="FIRST NAME"> <br>
@@ -46,8 +47,6 @@
         <label for="pass" class="form-label" >PASSWORD</label> <br>
         <input type="password" class="form-control form-control-lg" name="pass" id="pass" required placeholder="PASSWORD"> <br>
     </div>
-</form>
-
     <!--ARE YOU MALE OR FEMALE?-->
     <div>
         <p>ARE YOU MALE OR FEMALE ?</p>
@@ -64,5 +63,8 @@
     <div>
         <button class="btn btn-secondary active" type="submit">SIGNUP</button>
     </div>
+</form>
+
+    
 </body>
 </html>

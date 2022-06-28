@@ -31,7 +31,8 @@
     </div>
 
     <!--EMAIL AND PASSWORD FORM-->
-    <form class="form-group text-center">
+    <form class="form-group text-center" method="post">
+      {% csrf_token %}
       <div>
         <div>
           <label class="form-label" for="email">EMAIL</label>

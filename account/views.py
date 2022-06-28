@@ -11,5 +11,3 @@ def studentSignup(request):
     return render(request , 'studentSignup.html')
 
 
-
-
