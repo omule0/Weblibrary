@@ -25,7 +25,7 @@ def Student_Login(request):
             return redirect("/")
         else:
             messages.info(request , 'invalid credentials')
-            return redirect("student_login")
+            return redirect("studentLogin")
 
     
         
