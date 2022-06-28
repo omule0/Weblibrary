@@ -15,22 +15,11 @@ def Student_Reg(request):
     return render(request , 'student_reg.html' )
 
 
-def Student_Login(request):
-    if request.method == "GET":
-        email = request.POST['email']
-        password = request.POST['password']
-        user = auth.authenticate(email=email, password=password)
-        if user != None:
-            auth.login(request , user)
-            return redirect("/")
-        else:
-            messages.info(request , 'invalid credentials')
-            return redirect("studentLogin")
+def studentLogin(request):
+    return render(request , 'studentLogin.html')
 
-    
-        
-
-    return render(request , 'Student_Login.html')
+def studentSignup(request):
+    return render(request , 'studentSignup.html')
 
 
 
