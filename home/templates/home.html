@@ -1,51 +1,32 @@
-{%load static%}
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Home page</title> 
-    <!--this is the name the user will see on top of their browser-->
-    <link rel="stylesheet" href="{% static 'css/home.css'%}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+<!--download bootstrap and javascript-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--ensure proper touch zooming and responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
-<body>
-
-    <div class="head">
-        <h1>The Archive</h1>
-    </div>
-        <!--this will the name for our web app-->
-
-        
-    <div class="welcome">
-        <h2> <br>
-        <strong>Welcome</strong> to The Archive for scholars.</h2>
-        <br><br>
-        <p>We are looking forward to meeting all your reading needs.</p>
-        <!--the above is the introduction to the user-->
+<body class="container pt-5 pb-5">
+    <div>WEB-LIBRARY MANAGEMENT SYSTEM</div>
+    <hr>
+<!--ADD LINK TO LIBRARIAN ACCOUNT PAGE-->
+    <div><a href="">
+        <button>LIBRARIAN ACCOUNT</button>
+    </a></div>
+    <!--ADDLINK TO STUDENT ACCOUNT PAGE-->
+    <div>
+        <a href="">
+            <button>STUDENT ACCOUNT</button>
+        </a>
     </div>
 
-    <div class="about">
-        <br>
-        <p> This platform is an elite environment were scholars can learn, grow and develop new skill. </p>
-        <br>
-        <p>Students of all ages and cultuers are welcome here.</p>
-        <p>we hope you enjoy your stay.</p>
-        <!--this tries to explain a bit about us-->
-    </div>
-
-
-    <div class="type">
-        <br>
-        <h2>Choose account type.</h2>
-    </div>
-    <div class="account_type">
-        <a href="#">Student</a>
-        <!--this will be for the student who wants to sign up-->
-    </div>
-    <div class="account_type">
-        <a href="#">librarian</a>
-        <!--this will be for the librarian-->
-    </div>
 </body>
-
 </html>
-

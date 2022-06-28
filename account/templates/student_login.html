@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>STUDENT_REGISTRATION</title>
+    </head>
+
+    <body>
+        <form >
+            {% csrf_token %}
+            <label for="mail">EMAIL </label>
+            <input type="email" name="email" id="mail" placeholder="EMAIL ADDRESS"><br>
+            <br>
+            <label for="ps">PASSWORD</label>
+            <input type="text" name="password" id="ps" placeholder="PASSWORD"><br>
+            <br>
+            <button type="submit">LOGIN</button>
+        </form>
+        
+        <a href="/student_reg.html"><p>Dont have an account? Click here to create an account<p></a>
+    </body>
+</html>
