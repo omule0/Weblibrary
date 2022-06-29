@@ -9,5 +9,5 @@ class studentSignup(models.Model):
     EMAIL = models.EmailField(default="citizen0@utopia.com")
     PASSWORD = models.CharField(max_length=255)
     DATE_OF_BIRTH = models.DateField()
-    GENDER = models.BooleanField(default=None)
+    #GENDER = models.BooleanField(default=False)
 
