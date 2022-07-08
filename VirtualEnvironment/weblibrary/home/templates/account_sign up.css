@@ -1,0 +1,51 @@
+body {
+    background-color: #F2F2F2;  
+    text-align: center;  
+}
+
+
+.header{
+    text-align:center;
+    top: 0px;
+    padding:50px 50px;
+}
+h2{
+    font-size:30px;
+    font-weight: bold;
+}
+p{
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+a{
+    font-size:25px;
+    text-decoration: none;
+}
+.signin_button{
+    text-align:center;
+}
+.account_type{
+    text-align: center;
+}
+h3{
+    font-size: 25px;
+}
+h1 {
+    color: #009688;
+    font-size: 28px;
+    text-align: center;
+    font-family: Georgia;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+.container{
+    border-radius: 24px;
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    height: 200%;
+    width: 500px;
+    padding: 50px 50px 50px 50px;
+
+}
