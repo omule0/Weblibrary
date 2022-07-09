@@ -6,19 +6,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="librarain's_account.css">
     </head>
-    <body>
+    <body class="bdy">
+        <div class="header"><h1>The Archive</h1></div>
         <div class="container">
-            <div class="Header"><h1>The Archive</h1></div>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class=" col-12 col-lg-9 col-xl-50">
+                    <div class="card bg-#F2F2F2 text-black" style="border-radius: 2rem;">
+                        <div class="card-body p-2 ">
+                        <div class="mb-md-1 mt-md-1 pb-1">
             <form action="#" method="POST">
                 <div>
-                    <h1>Create Your Archive account</h1> 
+                    <h2>Create Your Archive account</h2> 
                 </div>  
                 <div>
-                    <h1>General Information</h1>
+                    <h2>General Information</h2>
                     <h3>Full name</h3>
                     <section class="full_name">
-                        <input type="text" name="name" id="user" placeholder="Mr. Peter John">
+                        <input type="text" name="name" id="user" class="form-control form-control-sm" placeholder="Mr. Peter John">
                     </section>
                     <br>
                     <h3>Gender</h3>
@@ -32,29 +38,29 @@
                     </section>
                     <h3>Email address</h3>
                     <section class="email">
-                        <input type="text" name="email" id="email" placeholder="mr.john@gmail.com">
+                        <input type="text" name="email" id="email"  class="form-control form-control-sm" placeholder="mr.john@gmail.com">
                     </section>
                 </div>
                 <div>
-                    <h2>Enter Username</h2>
+                    <h3>Enter Username</h3>
                     <section class="username">
-                        <input type="text" name="user" id="user" placeholder="Mr.John">
+                        <input type="text" name="user" id="user" class="form-control form-control-sm" placeholder="Mr.John">
                     </section>
                 </div>
                 <div>
-                    <h2>Password</h2>
+                    <h3>Password</h3>
                     <section class="password">
-                        <label for="user_password">Enter Password</label>
-                        <input type="password" name="user_password" id="user_password">
+                        <h5>Enter Password</h5>
+                        <input type="password" name="user_password" class="form-control form-control-sm" id="user_password">
                     </section>
                     <br>
                     <section class="password">
-                        <label for="confirm_password">Confirm Password</label>
-                        <input type="password" name="user_password" id="user_password">
+                        <h5>Confirm Password</h5>
+                        <input type="password" name="user_password" class="form-control form-control-sm"id="user_password">
                     </section>
                     <br>
                     <section class="security_question">
-                        <label for="confirm_password">Choose Security Question</label>
+                        <h5>Choose Security Question</h5>
                         <select name="question" id="question">
                             <option value="Select">Please Select</option>
                             <option value="phone_number">First Phone Number</option>
@@ -63,22 +69,22 @@
                     </section>
                     <br>
                     <section class="security_question">
-                        <label for="confirm_password">Answer Question</label>
-                        <input type="password" name="user_password" id="user_password">
+                        <h5>Answer Question</h5>
+                        <input type="password" name="user_password" class="form-control form-control-sm" id="user_password">
                     </section>
                 </div>
                 <div>
                     <h3>Professional Information</h3>
                 </div>
                 <div>
-                    <h2>Enter librarian's license</h2>
+                    <h5>Enter librarian's license</h5>
                     <section class="license">
-                        <input type="password" name="librarian" id="librarian" placeholder=" * * * * * * * * * * *">
+                        <input type="password" class="form-control form-control-sm" name="librarian" id="librarian" placeholder=" * * * * * * * * * * *">
                     </section>
                 </div>
                 <hr>
                 <div class="signup_button">
-                    <button><a href="#">Sign up</a></button>
+                    <button><a href="Librarian's Dashboard.html">Sign up</a></button>
                 </div>
             </form>    
         </div>

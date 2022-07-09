@@ -6,51 +6,58 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="student's_accounts.css">
     </head>
-    <body>
+    <body  class="bdy">
+        <div class="header"><h1>The Archive</h1></div>
+        <hr>
         <div class="container">
-            <div class="header"><h1>The Archive</h1></div>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class=" col-12 col-lg-9 col-xl-50">
+                    <div class="card bg-#F2F2F2 text-black" style="border-radius: 2rem;">
+                        <div class="card-body p-2 ">
+                        <div class="mb-md-1 mt-md-1 pb-1">
             <form action="#" method="POST">
                 <div>
-                    <h1>Create Your Archive account</h1> 
+                    <h2>Create Your Archive account</h2> 
                 </div>
                 <div>
-                    <h1>General Information</h1>
+                    <h2>General Information</h2>
                     <h3>Full name</h3>
                     <section class="full_name">
-                        <input type="text" name="name" id="user" placeholder="Sam John">
+                        <input type="text"  class="form-control form-control-sm" name="name" id="user" placeholder="Sam John">
                     </section>
                     <br>
                     <h3>Gender</h3>
                     <section class="gender">
-                        <input type="checkbox" name="gender" id="gender">
-                        <label for="gender">male</label>
+                        <input type="checkbox" class="form-check-input" name="gender" id="gender">
+                        <label for="gender">Male</label>
                     </section>
                     <section>
-                        <input type="checkbox" name="gender" id="gender">
+                        <input type="checkbox" class="form-check-input" name="gender" id="gender">
                         <label for="gender">Female</label>
                     </section>
+                    <br>
                     <h3>Email address</h3>
                     <section class="email">
-                        <input type="email" name="email" id="email" placeholder="samj@gmail.com">
+                        <input type="email" name="email"  class="form-control form-control-sm"id="email" placeholder="samj@gmail.com">
                     </section>
                 </div>
                 <div>
-                    <h2>Enter Username</h2>
+                    <h3>Enter Username</h3>
                     <section class="username">
-                        <input type="text" name="user" id="user" placeholder="Drex101">
+                        <input type="text" name="user" class="form-control form-control-sm" id="user" placeholder="Drex101">
                     </section>
                 </div>
                 <div>
-                    <h2>Password</h2>
+                    <h3>Password</h3>
                     <section class="password">
                         <label for="user_password">Enter Password</label>
-                        <input type="password" name="user_password" id="user_password">
+                        <input type="password" class="form-control form-control-sm" name="user_password" id="user_password">
                     </section>
-                    <br>
                     <section class="password">
                         <label for="confirm_password">Confirm Password</label>
-                        <input type="password" name="user_password" id="user_password">
+                        <input type="password"  class="form-control form-control-sm" name="user_password" id="user_password">
                     </section>
                 </div>
                 <hr>
@@ -58,6 +65,5 @@
                     <button><a href="Dashboard.html">Sign up</a></button>
             </form>
         </div>
-        
     </body>
 </html>

@@ -1,0 +1,37 @@
+.full_name{
+    padding: 10px;
+}
+.gender{
+    padding:10px;
+}
+.email{
+    padding: 10px;
+}
+.username{
+    padding: 10px;
+}
+.bdy{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color:#F2F2F2;
+
+}
+h1{
+    padding: 50px;
+    color:#009688;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+
+}
+.header{
+    height:100px;
+    position:static;
+}
+h2{
+    text-align: center;
+}
