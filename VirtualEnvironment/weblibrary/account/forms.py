@@ -19,7 +19,7 @@ class CreateUserForm(UserCreationForm):
         'class': 'form-control', 'placeholder': 'Please Confirm Password'
     }))
 
-    username = forms.CharField(max_length=100, widget=forms.TextInput(attrs={
+    username = forms.CharField(max_length=65, widget=forms.TextInput(attrs={
         'class': 'form-control', 'placeholder': 'Enter Username'
     }))
 
