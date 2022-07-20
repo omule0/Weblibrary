@@ -7,4 +7,4 @@ urlpatterns = [
     path('genre/<str:slug>', views.category_detail, name='category_detail'),
     path('pdf/<str:slug>', views.book_detail, name='book_detail'),
     path('searched_books', views.search_book, name='book_search'),
-                                                                    ]
+    path('searched_books', views.search_book, name='book_search')                                                             ]
