@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 
 class CreateUserForm(UserCreationForm):
-    names = forms.CharField(max_length=100, widget=forms.TextInput(attrs={
+    names = forms.CharField(max_length=50, widget=forms.TextInput(attrs={
         'class': 'form-control', 'placeholder': 'Please Enter your full name'
     }))
 
@@ -12,7 +12,7 @@ class CreateUserForm(UserCreationForm):
         'class': 'form-control', 'placeholder': 'Enter Email Address'
     }))
 
-    password1 = forms.CharField(max_length=100, widget=forms.PasswordInput(attrs={
+    password1 = forms.CharField(max_length=50, widget=forms.PasswordInput(attrs={
         'class': 'form-control', 'placeholder': 'At least eight characters'
     }))
     password2 = forms.CharField(max_length=100, widget=forms.PasswordInput(attrs={
