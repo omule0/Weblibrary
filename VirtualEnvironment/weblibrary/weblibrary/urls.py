@@ -14,15 +14,20 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from django.http import HttpResponse
-from home import views
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
-
-#def james(request):
- #   return HttpResponse('hello world')
+# Django admin header customizations
+admin.site.site_header = "LIBRARY CONTROL PANEL"
+admin.site.site_title = "LOG IN AS LIBRARIAN"
+# admin.site.index_title = ""
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('' , views.james)
-]
+                  path('', include('home.urls')),
+                  path('admin/', admin.site.urls),
+                  path('account/', include('account.urls')),
+                  path('library/', include('library.urls')),
+
+              ] + static(settings.MEDIA_URL,
+                         document_root=settings.MEDIA_ROOT)

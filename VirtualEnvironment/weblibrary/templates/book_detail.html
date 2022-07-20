@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+     <title>Book Details</title>
+     {% endblock %}
+
+{% block content %}
+
+<div class = 'container'>
+    <div class = 'row'>
+        <div class = 'col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4'>
+            
+            <div class="card">
+                <img src = '{{book.cover_image.url}}'>
+            </div>
+        </div>
+        <div class = 'col-12 col-sm-12 col-md-6 col-lg-8 col-xl-8'>
+            <div >
+            <h2 ><b>BOOK : {{book.title}}</b></h2>
+                <br>
+                <h5><b>AUTHOR : {{book.author}}</b></h5>
+                <br>
+                <h3>BOOK SUMMARY :</h3>
+                <br>
+                <h6>{{book.summary}}</h6>
+                <br>
+                <a href = '{{book.pdf.url}}' download="{{book.pdf.url}}">
+                    <button class="btn btn-sm btn-success">
+                        <p class="h6">Download {{book.title}} by {{book.author}}</p>
+                    </button>
+            </a>
+        </div>
+        </div>
+    </div>
+</div>
+<style>
+                body{
+    background-image: url('https://fernieyouth.ca/wp-content/uploads/2016/02/box-section-bg-library.jpg');
+    background-repeat: no-repeat;
+     background-size: cover;
+    }
+    </style>
+</div>
+{% endblock %}

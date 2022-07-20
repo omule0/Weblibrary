@@ -1,0 +1,15 @@
+
+<head>
+        {% block title %}
+    <title>WebLibrary | Home</title>
+        {% endblock %}
+    </head>
+
+  {% block content %}
+<div class = 'container'></div>
+  <div class = 'row'>{% for book in recommended_books %}</div>
+    <div class = 'col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2'><a href = ""></a><div>
+          <div class="uk-card uk-card-default uk-card-body"></div>
+              <div><img src = "{{book.cover_image.url}}"></div>
+{% endfor %}
+{% endblock %}
