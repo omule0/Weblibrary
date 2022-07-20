@@ -1,43 +1,35 @@
+from django.contrib import messages
+from django.contrib.auth import authenticate, login, logout
+from django.shortcuts import redirect
 from django.shortcuts import render
-<<<<<<< HEAD
-<<<<<<< HEAD
+from .forms import CreateUserForm
 
-# Create your views here.
-=======
-||||||| merged common ancestors
-=======
-<<<<<<< HEAD
->>>>>>> marvin
-from django.http import HttpResponse
 
-#views for the home app
-    #view to Create a New Account
-    #view to login users
-    #view to logout users
+def student_signup(request):
+    register_form = CreateUserForm()
+    if request.method == 'POST':
+        register_form = CreateUserForm(request.POST)
+        if register_form.is_valid():
+            register_form.save()
+            messages.success(request, "Account Created Successfully!")
+            return redirect('login')
+    return render(request, 'studentSignup.html', {'register_form': register_form})
 
-def createNewAccount(request):
-    #create student account | librarian account
-    pass
 
-def login(request):
-    #login to student account | librarian account
-    pass
+def student_login(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password1')
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return redirect('home')
+        else:
+            messages.error(request, "Invalid Credentials")
 
-def logout(request):
-    #logout from any account currently logged in
-    pass
-<<<<<<< HEAD
->>>>>>> 4c6cd1e6cd5a669a6a5989b5496358d6204333e1
-||||||| merged common ancestors
-||||||||| 6dca223
-=========
-from django.shortcuts import render
+    return render(request, 'studentLogin.html', {})
 
-# Create your views here.
->>>>>>>>> Temporary merge branch 2
-=======
-=======
 
-# Create your views here.
->>>>>>> 624e1c58ccbf25863295036dfce2e4d3bc5fdb71
->>>>>>> marvin
+def student_logout(request):
+    logout(request)
+    return redirect('home')
