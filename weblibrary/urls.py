@@ -18,6 +18,11 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+# Django admin header customizations
+admin.site.site_header = "LIBRARY CONTROL PANEL"
+admin.site.site_title = "LOG IN AS LIBRARIAN"
+# admin.site.index_title = ""
+
 urlpatterns = [
                   path('', include('home.urls')),
                   path('admin/', admin.site.urls),
