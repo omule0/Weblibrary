@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '4d%65d8znpr9clt*r_03@(icyn6178iutx_hbr1kt*zz82c57x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'webonelibrary.herokuapp.com']
 
 # Application definition
 
@@ -125,3 +125,8 @@ MEDIA_URL = '/media/'
 
 # Path where media is stored
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+STATICFILES_DIRS =(
+    os.path.join(BASE_DIR, 'media'),
+)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
