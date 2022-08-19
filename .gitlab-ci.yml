@@ -12,7 +12,7 @@ test:
     - python manage.py migrate
     - python manage.py collectstatic --noinput
   only:
-    - main
+    - da_library
 
 deploy:
   image: ruby:latest
@@ -28,4 +28,4 @@ deploy:
     name: main
     url: $HEROKU_APP_HOST
   only:
-    - main
+    - da_library
