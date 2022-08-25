@@ -1,6 +1,9 @@
 from django.shortcuts import render
+<<<<<<< HEAD
 
 # Create your views here.
+=======
+>>>>>>> a241849a6292592d7c34c1f1ed0d867b47a4e9dd
 #views for the home app
     #view for students to use the library -> StudentLib
     #view for students to borrow books -> BorrowBook

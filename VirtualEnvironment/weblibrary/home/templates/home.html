@@ -1,50 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Home page</title> 
-    <!--this is the name the user will see on top of their browser-->
-    <link rel="stylesheet" href="home.css">
+    <meta name="viewport" content="with= device-width, intial-scale=1.0"> 
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <style>
+        .home{
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        
+        }
+        .name{
+            color:#009688;
+        }
+        .header{
+            width: 90%;
+            margin: auto;
+            padding: 35px 0;    display: flex;
+            align-items: center;
+            justify-content:space-between ;
+        }
+        .header ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+        
+        }
+        .header ul li a{
+            text-decoration:none ;
+            color:blue;
+            text-transform: uppercase;
+        }
+        
+        .account_type {
+            padding: 40px 0px;
+            position: relative;
+            text-align: center;
+            width: 100%;
+        }
+        .account_type a {
+            color: #fff;
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+        }
+        p {
+            margin: 0 auto;
+            padding: 50px 50px;
+            text-align: center;
+            font-size:30px;
+            color: #fff;
+        }
+        h2 {
+            color:#fff;
+            font-size: 30px;
+            line-height: 100px;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        h1 {
+            padding: 0px;
+            color:#fff;
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+        
+        }
+        .welcome h1{
+            font-size:50px;
+            margin-top:10px;
+        }
+        .welcome p{
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px;
+        }
+        button{
+            width: 200px;
+            text-align:center;
+            margin: 20px 10px;
+            border-radius: 100px;
+            background: transparent;
+            border: 2px solid #009688;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            font-size: 19px;
+        
+        }
+        
+    </style>
 </head>
 <body>
-
-    <div class="head">
-        <h1>The Archive</h1>
-    </div>
-        <!--this will the name for our web app-->
-
-        
-    <div class="welcome">
-        <h2> <br>
-        <strong>Welcome</strong> to The Archive for scholars.</h2>
-        <br><br>
-        <p>We are looking forward to meeting all your reading needs.</p>
-        <!--the above is the introduction to the user-->
-    </div>
-
-    <div class="about">
-        <br>
-        <p> This platform is an elite environment were scholars can learn, grow and develop new skill. </p>
-        <br>
-        <p>Students of all ages and cultuers are welcome here.</p>
-        <p>we hope you enjoy your stay.</p>
-        <!--this tries to explain a bit about us-->
-    </div>
-
-
-    <div class="type">
-        <br>
-        <h2>Choose account type.</h2>
-    </div>
-    <div class="account_type">
-        <a href="#">Student</a>
-        <!--this will be for the student who wants to sign up-->
-    </div>
-    <div class="account_type">
-        <a href="#">librarian</a>
-        <!--this will be for the librarian-->
+    <div class="home">
+        <div class="header">
+            <h1 class="name">The Archive</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">testimines</a></li>
+                <!--to add other relevant information soon-->
+            </ul>
+        </div>    
+        <div class="welcome">
+            <h1> <br>
+            <strong>Welcome</strong> to The Archive </h1>
+            <p>We are looking forward to meeting all your reading needs.<br>we hope you enjoy your stay.</p>
+            <h2>***Reading Starts Here***</h2>
+        </div>
+        <form action="#" method="POST">
+            <div class="account_type">
+                <button><a href="sign_in.html">Sign in</a></button>
+                <button><a href="account_sign up.html">Create Account</a></button>
+            </div>
+        </form>               
     </div>
 </body>
-
-</html>
-
+</html
