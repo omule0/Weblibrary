@@ -1,0 +1,31 @@
+stages:
+  - test
+  - deploy
+test:
+  stage: test
+  image: python:3.10.5
+  before_script:
+    - pip install -r requirements.txt
+
+  when: on_success
+  script:
+    - python manage.py migrate
+    - python manage.py collectstatic --noinput
+  only:
+    - da_library
+
+deploy:
+  image: ruby:latest
+  stage: deploy
+  before_script:
+    - gem install dpl
+
+  script:
+    - dpl --provider=heroku --app=webonelibrary --api-key=e5cada56-ac03-4f78-8535-782e53ebf8b1
+    - dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY
+
+  environment:
+    name: da_library
+    url: $HEROKU_APP_HOST
+  only:
+    - da_library
